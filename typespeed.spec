@@ -1,4 +1,4 @@
-%define version 0.6.1
+%define version 0.6.2
 %define release %mkrel 1
 %define name	typespeed
 
@@ -25,11 +25,11 @@ or be a loser.
 %setup -q
 
 %build
-%configure docdir=%{_datadir}/doc/%{name}-%{version}
+%configure
 %make
 
 %install
-%makeinstall
+%makeinstall highscoredir=$RPM_BUILD_ROOT%{_localstatedir}/games
 rm -f $RPM_BUILD_ROOT%{_datadir}/doc/%{name}/README
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
