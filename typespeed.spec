@@ -40,7 +40,6 @@ Exec=/usr/bin/typespeed
 Type=Application
 Terminal=true
 Categories=X-MandrivaLinux-MoreApplications-Games-Other;Game;Application;
-Encoding=UTF-8
 X-Desktop-File-Install-Version=0.9
 EOF
 
