@@ -1,10 +1,10 @@
-%define version 0.6.2
+%define version 0.6.3
 %define release %mkrel 1
 %define name	typespeed
 
 Name:		%name
-Summary:	type words that are flying by from left to right as fast as you can
-License:	GPL
+Summary:	Type words that are flying by from left to right as fast as you can
+License:	GPLv2+
 URL:		http://tobias.eyedacor.org/typespeed/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Source:		http://tobias.eyedacor.org/typespeed/%{name}-%{version}.tar.gz
@@ -49,11 +49,13 @@ EOF
 %files
 %defattr(-,root,root)
 %doc doc/README COPYING NEWS TODO BUGS AUTHORS
-%config %{_sysconfdir}/typespeedrc
+%config(noreplace) %{_sysconfdir}/typespeedrc
 %attr(2755,root,games) %{_bindir}/%{name}
 %attr(775,root,games) %{_localstatedir}/games/%{name}.score
 %{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/locale/de_DE/LC_MESSAGES/%{name}.mo
+%{_datadir}/locale/fr_FR/LC_MESSAGES/%{name}.mo
+%{_datadir}/locale/it/LC_MESSAGES/%{name}.mo
 %{_datadir}/applications/mandriva-%{name}.desktop
 
