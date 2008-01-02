@@ -6,6 +6,7 @@ Name:		%name
 Summary:	Type words that are flying by from left to right as fast as you can
 License:	GPLv2+
 URL:		http://tobias.eyedacor.org/typespeed/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Source:		http://tobias.eyedacor.org/typespeed/%{name}-%{version}.tar.gz
 Group:		Games/Other
 Version:	%version
