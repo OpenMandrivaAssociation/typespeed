@@ -2,6 +2,7 @@
 %define release %mkrel 1
 %define name	typespeed
 
+
 Name:		%name
 Summary:	Type words that are flying by from left to right as fast as you can
 License:	GPLv2+
