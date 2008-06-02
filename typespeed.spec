@@ -30,7 +30,7 @@ or be a loser.
 %make
 
 %install
-%makeinstall highscoredir=$RPM_BUILD_ROOT%{_localstatedir}/games
+%makeinstall highscoredir=$RPM_BUILD_ROOT%{_localstatedir}/lib/games
 rm -f $RPM_BUILD_ROOT%{_datadir}/doc/%{name}/README
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
@@ -52,7 +52,7 @@ EOF
 %doc doc/README COPYING NEWS TODO BUGS AUTHORS
 %config(noreplace) %{_sysconfdir}/typespeedrc
 %attr(2755,root,games) %{_bindir}/%{name}
-%attr(775,root,games) %{_localstatedir}/games/%{name}.score
+%attr(775,root,games) %{_localstatedir}/lib/games/%{name}.score
 %{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/locale/de_DE/LC_MESSAGES/%{name}.mo
