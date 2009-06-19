@@ -1,5 +1,5 @@
 %define version 0.6.5
-%define release %mkrel 3
+%define release %mkrel 4
 %define name	typespeed
 
 
@@ -26,7 +26,7 @@ or be a loser.
 %setup -q
 
 %build
-%configure
+%configure --with-highscoredir=%{_localstatedir}/lib/games
 %make
 
 %install
