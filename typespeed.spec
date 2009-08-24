@@ -1,5 +1,5 @@
 %define version 0.6.5
-%define release %mkrel 5
+%define release %mkrel 6
 %define name	typespeed
 
 
