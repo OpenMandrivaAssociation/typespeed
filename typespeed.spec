@@ -14,6 +14,11 @@ Source:		http://tobias.eyedacor.org/typespeed/%{name}-%{version}.tar.gz
 Group:		Games/Other
 Version:	%version
 Release:	%release
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ncurses-devel, gettext-devel
 
 %description
